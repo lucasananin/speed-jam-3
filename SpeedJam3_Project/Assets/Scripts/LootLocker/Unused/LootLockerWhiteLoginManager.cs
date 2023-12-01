@@ -7,7 +7,7 @@ public class LootLockerWhiteLoginManager : MonoBehaviour
 {
     [SerializeField] PlayerDataSO _playerDataSO = null;
     [SerializeField] LoginUiPanel _loginPanel = null;
-    [SerializeField] string _email = "user@lootlocker.io";
+    //[SerializeField] string _email = "user@lootlocker.io";
 
     private string PASSWORD = "myLittlePassword";
 

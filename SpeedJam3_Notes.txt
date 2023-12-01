@@ -1,4 +1,6 @@
 // Speed Jam 3 - Anotacoes.
 
 # Web Build.
++ baixar e instalar o modulo web.
+
 # Testar um controle de personagem 2d simples.

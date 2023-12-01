@@ -12,25 +12,24 @@ public class LoginUiPanel : MonoBehaviour
     [SerializeField] GameObject _loadingPanel = null;
     [SerializeField] TMP_InputField _inputField = null;
     [SerializeField] Button _confirmButton = null;
-    [SerializeField] TextMeshProUGUI _errorMessage = null;
+    [SerializeField] TextMeshProUGUI _errorMessageText = null;
 
-    private IEnumerator Start()
-    {
-        //while (!_playerDataSO.HasLoggedIn)
-        while (!LootLockerSDKManager.CheckInitialized())
-        {
-            yield return null;
-        }
+    //private IEnumerator Start()
+    //{
+    //    while (!LootLockerSDKManager.CheckInitialized())
+    //    {
+    //        yield return null;
+    //    }
 
-        if (PlayerPrefs.GetInt("HasSetName", 0) == 0)
-        {
-            Show();
-        }
-        else
-        {
-            HideAll();
-        }
-    }
+    //    if (!_playerDataSO.HasSetName())
+    //    {
+    //        Show();
+    //    }
+    //    else
+    //    {
+    //        HideAll();
+    //    }
+    //}
 
     private void OnEnable()
     {
@@ -45,7 +44,7 @@ public class LoginUiPanel : MonoBehaviour
     private void Update()
     {
         _confirmButton.interactable = _inputField.text.Length > 0;
-        _errorMessage.text = _playerDataSO.LoginErrorMessage;
+        _errorMessageText.text = _playerDataSO.LoginErrorMessage;
     }
 
     public void SetPlayerName()
@@ -57,8 +56,8 @@ public class LoginUiPanel : MonoBehaviour
         {
             if (response.success)
             {
-                PlayerPrefs.SetString("PlayerId", _playerDataSO.UserName);
-                PlayerPrefs.SetInt("HasSetName", 1);
+                _playerDataSO.HasSetName();
+                _playerDataSO.SetPlayerId(_playerDataSO.UserName);
                 HideAll();
             }
             else
@@ -67,8 +66,6 @@ public class LoginUiPanel : MonoBehaviour
                 HideWaitPanel();
             }
         });
-
-        //FindObjectOfType<LootLockerWhiteLoginManager>().TryCreateAccount();
     }
 
     public void ShowWaitPanel()

@@ -2660,7 +2660,7 @@ MonoBehaviour:
   _loadingPanel: {fileID: 336827287}
   _inputField: {fileID: 367580773}
   _confirmButton: {fileID: 1401501275}
-  _errorMessage: {fileID: 1097023211}
+  _errorMessageText: {fileID: 1097023211}
 --- !u!1 &1289598231
 GameObject:
   m_ObjectHideFlags: 0
@@ -4002,7 +4002,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!114 &1685005665
 MonoBehaviour:
   m_ObjectHideFlags: 0

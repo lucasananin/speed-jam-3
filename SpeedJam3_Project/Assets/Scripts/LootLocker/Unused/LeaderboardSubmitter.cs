@@ -7,11 +7,11 @@ public class LeaderboardSubmitter : MonoBehaviour
 {
     [SerializeField] PlayerDataSO _playerDataSO = null;
     [SerializeField] string _leaderboardId = "18975";
-    [SerializeField] string _memberID = "lucasananin";
-    [SerializeField] int _score = 123;
+    //[SerializeField] string _memberID = "lucasananin";
+    //[SerializeField] int _score = 123;
 
-    private LootLockerSubmitScoreResponse _submiteResponse = null;
-    private LootLockerGetScoreListResponse _retrieveResponse = null;
+    //private LootLockerSubmitScoreResponse _submiteResponse = null;
+    //private LootLockerGetScoreListResponse _retrieveResponse = null;
 
     [ContextMenu("SubmitScore()")]
     public void SubmitScore()
