@@ -13,7 +13,7 @@ public class LeaderboardUiPanel : MonoBehaviour
     [SerializeField] GameObject _leaderboardPanel = null;
     [SerializeField] LeaderboardUiSlot _slotPrefab = null;
     [SerializeField] Transform _slotParent = null;
-    [SerializeField] Button _continueButton = null;
+    //[SerializeField] Button _continueButton = null;
     [SerializeField] TextMeshProUGUI _loadingText = null;
     [SerializeField] List<LeaderboardUiSlot> _slots = null;
 

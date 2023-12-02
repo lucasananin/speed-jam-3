@@ -12,15 +12,15 @@ namespace TopDownShooter
         [Space]
         [SerializeField] bool _flipX = true;
         [SerializeField] bool _flipY = true;
-        [Space]
-        [SerializeField, ReadOnly] Camera _camera = null;
+        //[Space]
+        //[SerializeField, ReadOnly] Camera _camera = null;
 
-        private void Awake()
-        {
-            _camera = Camera.main;
-        }
+        //private void Awake()
+        //{
+        //    _camera = Camera.main;
+        //}
 
-        private void LateUpdate()
+        private void FixedUpdate()
         {
             Vector3 _mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -35,7 +35,7 @@ namespace TopDownShooter
 
             if (_flipX || _flipY)
             {
-                bool _isLookingToTheRight = _camera.WorldToViewportPoint(_mousePosition).x > 0.5f;
+                bool _isLookingToTheRight = Camera.main.WorldToViewportPoint(_mousePosition).x > 0.5f;
                 int _xScale = _isLookingToTheRight ? 1 : -1;
                 int _yScale = _isLookingToTheRight ? 1 : -1;
                 transform.localScale = new Vector3(_flipX ? _xScale : 1, _flipY ? _yScale : 1, 1);
