@@ -1,18 +1,24 @@
 // Speed Jam 3 - Anotacoes.
 
 ## Inimigo:
-+ atirar contra o jogador.
++ Atirar contra o jogador.
++ Testar boss.
 
 ## Prototipo de level progression.
 + fazer tres fases e passar de uma para a outra.
 
 ## UI.
-+ main menu.
++ menu principal.
 + vida do jogador.
 + tempo de jogo.
 
 ## Audios:
 + procurar...
+
+## Vfx:
++ ver quais.
+
+## Post Processing:
 
 * Objetos que causam dano dão um "tryGet<healthSystem>" ao inves 
 de olhar tag.
