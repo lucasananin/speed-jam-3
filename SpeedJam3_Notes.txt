@@ -1,15 +1,16 @@
 // Speed Jam 3 - Anotacoes.
 
-## Melhorar o controle do personagem:
-+ Zerar a velocidade do personagem ao atirar.
-+ Permitir o jogador controlar o boneco com wasd, porem 
-com uma velocidade extremamente reduzida.
-
 ## Laser que ativa/desativa.
 ## Inimigo que se move me direcao ao jogador se chegar 
 dentro de uma raio.
 ## Teia que diminui a velocidade do jogador.
 - Aumentar o linear drag do rigidbody do jogador.
 
+## Prototipo de level progression.
++ fazer tres fases e passar de uma para a outra.
+
 ## Fases:
 + fase no escuro.
+
+## Transformar os objetos em prefabs.
+## Mudar o nome da cena.
