@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 136200570464502666}
+  _onlyEnabledByPlayer: 0
   _isActivated: 0
   _onEnabled:
     m_PersistentCalls:
