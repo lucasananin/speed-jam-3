@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Rigidbody2D _rb = null;
     [SerializeField] bool _resetVelocityOnShoot = false;
 
+    [Title("// Drag")]
+    [SerializeField, ReadOnly] float _defaultDrag = 0;
+
     [Title("// Impulse Back")]
     [SerializeField] float _impulseForceMultiplier = 10f;
 
@@ -18,6 +21,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float _xInput = 0;
     [SerializeField] float _yInput = 0;
     [SerializeField] float _moveSpeed = 1f;
+
+    private void Awake()
+    {
+        _defaultDrag = _rb.drag;
+    }
 
     private void OnEnable()
     {
@@ -63,5 +71,15 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 _velocity = _direction * _multiplier;
         _rb.AddForce(_velocity, ForceMode2D.Force);
+    }
+
+    public void SetDrag(float _value)
+    {
+        _rb.drag = _value;
+    }
+
+    public void ResetDrag()
+    {
+        _rb.drag = _defaultDrag;
     }
 }

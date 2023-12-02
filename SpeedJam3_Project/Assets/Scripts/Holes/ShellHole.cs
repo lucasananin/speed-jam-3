@@ -18,7 +18,6 @@ public class ShellHole : MonoBehaviour
         {
             if (_colliders[i].gameObject.CompareTag("Player"))
             {
-                Debug.Log($"fodase");
                 var _playerMovement = _colliders[i].GetComponent<PlayerMovement>();
 
                 var _direction = _isPullType ?
