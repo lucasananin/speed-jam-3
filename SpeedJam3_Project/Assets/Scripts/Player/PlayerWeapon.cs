@@ -23,7 +23,6 @@ public class PlayerWeapon : Weapon
         _mousePosition.z = 0;
 
         Bullet _bullet = Instantiate(_bulletPrefab, _shootOrigin.position, Quaternion.identity);
-        _bullet.gameObject.SetActive(true);
 
         Vector3 _impulseDirection = (_mousePosition - transform.position).normalized;
         _bullet.AddImpulse(_impulseDirection, _impulseForceMultiplier);
