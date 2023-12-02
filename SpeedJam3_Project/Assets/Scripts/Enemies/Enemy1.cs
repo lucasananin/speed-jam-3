@@ -6,6 +6,7 @@ using UnityEngine;
 public class Enemy1 : MonoBehaviour
 {
     [SerializeField] Rigidbody2D _rb = null;
+    [SerializeField] SpriteRenderer _alertAreaCircle = null;
     [SerializeField, ReadOnly] HealthSystem _playerHealth = null;
     [Space]
     [SerializeField] float _moveSpeed = 1f;
@@ -47,6 +48,11 @@ public class Enemy1 : MonoBehaviour
             float _angle = Mathf.Atan2(_dir.y, _dir.x) * Mathf.Rad2Deg;
             Quaternion _newRot = Quaternion.AngleAxis(_angle, Vector3.forward);
             transform.rotation = Quaternion.Slerp(transform.rotation, _newRot, _rotationSpeed * Time.deltaTime);
+        }
+
+        if (_alertAreaCircle != null)
+        {
+            _alertAreaCircle.transform.localScale = Vector3.one * (_alertDistance * 2);
         }
     }
 }
