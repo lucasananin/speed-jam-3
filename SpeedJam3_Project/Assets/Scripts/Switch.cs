@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class Switch : MonoBehaviour
 {
     [SerializeField] SpriteRenderer _spriteRenderer = null;
+    [SerializeField] bool _onlyEnabledByPlayer = true;
     [SerializeField] bool _isActivated = false;
     [SerializeField] UnityEvent _onEnabled = null;
 
@@ -13,12 +14,10 @@ public class Switch : MonoBehaviour
     {
         if (_isActivated) return;
 
-        //if (_other.gameObject.CompareTag("Player"))
-        //{
-        //    _isActivated = true;
-        //    _spriteRenderer.color = Color.green;
-        //    _onEnabled?.Invoke();
-        //}
+        if (_onlyEnabledByPlayer && !_other.gameObject.CompareTag("Player"))
+        {
+            return;
+        }
 
         _isActivated = true;
         _spriteRenderer.color = Color.green;
