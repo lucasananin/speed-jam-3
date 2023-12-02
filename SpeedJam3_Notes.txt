@@ -1,6 +1,6 @@
 // Speed Jam 3 - Anotacoes.
 
-## Laser que ativa/desativa.
+## Crosshair.
 ## Inimigo que se move em direcao ao jogador se chegar 
 dentro de uma raio.
 ## Objetos que causam dano tryGet healthSystem ao inves 
