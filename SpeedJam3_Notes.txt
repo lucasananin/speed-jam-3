@@ -1,11 +1,18 @@
 // Speed Jam 3 - Anotacoes.
 
 ## Inimigo:
-+ causa dano ao jogador.
-+ atira contra o jogador.
++ atirar contra o jogador.
 
 ## Prototipo de level progression.
 + fazer tres fases e passar de uma para a outra.
+
+## UI.
++ main menu.
++ vida do jogador.
++ tempo de jogo.
+
+## Audios:
++ procurar...
 
 * Objetos que causam dano dão um "tryGet<healthSystem>" ao inves 
 de olhar tag.

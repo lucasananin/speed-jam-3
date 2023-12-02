@@ -52,7 +52,7 @@ public class Enemy1 : MonoBehaviour
 
         if (_alertAreaCircle != null)
         {
-            _alertAreaCircle.transform.localScale = Vector3.one * (_alertDistance * 2);
+            _alertAreaCircle.transform.localScale = Vector3.one * _alertDistance * 2;
         }
     }
 }
