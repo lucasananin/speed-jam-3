@@ -1,9 +1,11 @@
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerImpulseTest : MonoBehaviour
 {
+    [Title("// General")]
     [SerializeField] Rigidbody2D _rb = null;
     [SerializeField] float _impulseForceMultiplier = 10f;
 
