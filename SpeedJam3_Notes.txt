@@ -3,6 +3,8 @@
 ## Laser que ativa/desativa.
 ## Inimigo que se move em direcao ao jogador se chegar 
 dentro de uma raio.
+## Objetos que causam dano tryGet healthSystem ao inves 
+de olhar tag.
 
 ## Prototipo de level progression.
 + fazer tres fases e passar de uma para a outra.

@@ -13,11 +13,15 @@ public class Switch : MonoBehaviour
     {
         if (_isActivated) return;
 
-        if (_other.gameObject.CompareTag("Player"))
-        {
-            _isActivated = true;
-            _spriteRenderer.color = Color.green;
-            _onEnabled?.Invoke();
-        }
+        //if (_other.gameObject.CompareTag("Player"))
+        //{
+        //    _isActivated = true;
+        //    _spriteRenderer.color = Color.green;
+        //    _onEnabled?.Invoke();
+        //}
+
+        _isActivated = true;
+        _spriteRenderer.color = Color.green;
+        _onEnabled?.Invoke();
     }
 }

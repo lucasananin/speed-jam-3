@@ -925,6 +925,7 @@ MonoBehaviour:
   _playerWeapon: {fileID: 6510449956788970911}
   _rb: {fileID: 6510449956788970900}
   _resetVelocityOnShoot: 0
+  _defaultDrag: 0
   _impulseForceMultiplier: 2
   _useInput: 0
   _xInput: 0
@@ -987,3 +988,7 @@ MonoBehaviour:
   _bulletPrefab: {fileID: 8701495659189373570, guid: 16b0baaf9d6e4d140a72ec3d787679ba, type: 3}
   _shootOrigin: {fileID: 6510449956412999784}
   _impulseForceMultiplier: 20
+  _isHoldingShootButton: 0
+  _bulletAngle: 0.3
+  _fireRate: 0.1
+  _nextFire: 0

@@ -2439,9 +2439,33 @@ PrefabInstance:
     m_TransformParent: {fileID: 1643785138}
     m_Modifications:
     - target: {fileID: 136200570430247464, guid: 4171a23a0cafaac4985d7ad1b2950296, type: 3}
+      propertyPath: _onEnabled.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136200570430247464, guid: 4171a23a0cafaac4985d7ad1b2950296, type: 3}
+      propertyPath: _onEnabled.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136200570430247464, guid: 4171a23a0cafaac4985d7ad1b2950296, type: 3}
       propertyPath: _onEnabled.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 16220466}
+    - target: {fileID: 136200570430247464, guid: 4171a23a0cafaac4985d7ad1b2950296, type: 3}
+      propertyPath: _onEnabled.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 136200570430247464, guid: 4171a23a0cafaac4985d7ad1b2950296, type: 3}
+      propertyPath: _onEnabled.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisableVisuals
+      objectReference: {fileID: 0}
+    - target: {fileID: 136200570430247464, guid: 4171a23a0cafaac4985d7ad1b2950296, type: 3}
+      propertyPath: _onEnabled.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LaserBehaviour, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 136200570430247464, guid: 4171a23a0cafaac4985d7ad1b2950296, type: 3}
+      propertyPath: _onEnabled.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 136200570430247465, guid: 4171a23a0cafaac4985d7ad1b2950296, type: 3}
       propertyPath: m_Name
       value: Switch
@@ -2898,6 +2922,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6510449956788970899, guid: 434273d413cadf74797fafce844dc48f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6510449956788970902, guid: 434273d413cadf74797fafce844dc48f, type: 3}
       propertyPath: m_RootOrder
       value: 13

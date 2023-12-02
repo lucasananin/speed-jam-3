@@ -10,6 +10,9 @@ public class LaserBehaviour : MonoBehaviour
     [SerializeField] Collider2D _collider = null;
     //[SerializeField] bool _isEnabled = true;
 
+    //[Title("// States")]
+    //[SerializeField] 
+
     [Title("// Damage")]
     [SerializeField] float _damage = 99;
 

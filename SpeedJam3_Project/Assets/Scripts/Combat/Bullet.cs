@@ -16,13 +16,6 @@ public class Bullet : MonoBehaviour
         transform.DOKill();
     }
 
-    public void AddImpulse(Vector3 _direction, float _multiplier)
-    {
-        var _velocity = _direction * _multiplier;
-        _rb.AddForce(_velocity, ForceMode2D.Impulse);
-        //transform.DOScale(_finalScale, _scaleDuration);
-    }
-
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
     //    if (_isPlayerBullet && collision.gameObject.CompareTag("Player"))
@@ -41,5 +34,12 @@ public class Bullet : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+    public void AddImpulse(Vector3 _direction, float _multiplier)
+    {
+        var _velocity = _direction * _multiplier;
+        _rb.AddForce(_velocity, ForceMode2D.Impulse);
+        //transform.DOScale(_finalScale, _scaleDuration);
     }
 }

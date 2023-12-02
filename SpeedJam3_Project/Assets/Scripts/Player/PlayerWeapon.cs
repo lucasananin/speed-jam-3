@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,13 +7,33 @@ using UnityEngine;
 public class PlayerWeapon : Weapon
 {
     [SerializeField] float _impulseForceMultiplier = 10f;
+    [SerializeField] bool _isHoldingShootButton = false;
+    [SerializeField] float _bulletAngle = 3f;
+    [SerializeField] float _fireRate = 0.1f;
+    [SerializeField, ReadOnly] float _nextFire = 0f;
 
     public event Action onShoot = null;
 
+    private void Awake()
+    {
+        _nextFire = 0f;
+    }
+
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        _isHoldingShootButton = Input.GetMouseButton(0);
+    }
+
+    private void FixedUpdate()
+    {
+        if (_nextFire < _fireRate)
         {
+            _nextFire += Time.fixedDeltaTime;
+        }
+
+        if (_isHoldingShootButton && _nextFire >= _fireRate)
+        {
+            _nextFire -= _fireRate;
             Shoot();
         }
     }
@@ -23,6 +44,9 @@ public class PlayerWeapon : Weapon
         _mousePosition.z = 0;
 
         Bullet _bullet = Instantiate(_bulletPrefab, _shootOrigin.position, Quaternion.identity);
+
+        float _randomAngle = UnityEngine.Random.Range(-_bulletAngle, _bulletAngle);
+        _mousePosition += transform.up * _randomAngle;
 
         Vector3 _impulseDirection = (_mousePosition - transform.position).normalized;
         _bullet.AddImpulse(_impulseDirection, _impulseForceMultiplier);
