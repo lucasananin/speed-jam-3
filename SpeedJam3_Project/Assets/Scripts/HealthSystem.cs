@@ -38,8 +38,16 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
+    [Button]
     private void ResetHealth()
     {
         _currentHealth = _maxHealth;
+    }
+
+    [Button]
+    private void Revive()
+    {
+        ResetHealth();
+        gameObject.SetActive(true);
     }
 }

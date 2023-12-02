@@ -1,13 +1,16 @@
 // Speed Jam 3 - Anotacoes.
 
-## Crosshair.
-## Inimigo que se move em direcao ao jogador se chegar 
-dentro de uma raio.
-## Objetos que causam dano tryGet healthSystem ao inves 
-de olhar tag.
+## Inimigo:
++ causa dano ao jogador.
++ atira contra o jogador.
 
 ## Prototipo de level progression.
 + fazer tres fases e passar de uma para a outra.
 
+* Objetos que causam dano dão um "tryGet<healthSystem>" ao inves 
+de olhar tag.
+
 ## Fases:
 + fase no escuro.
++ jogador é puxado para cima enquanto precisa esquivar 
+de espetos.

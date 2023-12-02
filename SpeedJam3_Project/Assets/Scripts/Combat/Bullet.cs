@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] Rigidbody2D _rb = null;
     [SerializeField] bool _isPlayerBullet = true;
+    [SerializeField] float _damage = 1;
     //[Space]
     //[SerializeField] float _finalScale = 1f;
     //[SerializeField] float _scaleDuration = 1f;
@@ -31,6 +32,11 @@ public class Bullet : MonoBehaviour
         if (_isPlayerBullet && collision.gameObject.CompareTag("Player"))
         {
             return;
+        }
+
+        if (collision.gameObject.TryGetComponent(out HealthSystem _healthSystem))
+        {
+            _healthSystem.TakeDamage(_damage);
         }
 
         Destroy(gameObject);
