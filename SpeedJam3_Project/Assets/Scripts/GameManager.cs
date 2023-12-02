@@ -17,6 +17,13 @@ public class GameManager : MonoBehaviour
 
     private void PlayerHealth_onPlayerDead()
     {
+        StartCoroutine(RestartScene());
+    }
+
+    private IEnumerator RestartScene()
+    {
+        yield return new WaitForSeconds(1);
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
