@@ -6,11 +6,8 @@ using UnityEngine;
 
 public class PlayerWeapon : Weapon
 {
-    [SerializeField] float _impulseForceMultiplier = 10f;
     [SerializeField] bool _isHoldingShootButton = false;
     [SerializeField] float _bulletAngle = 3f;
-    [SerializeField] float _fireRate = 0.1f;
-    [SerializeField, ReadOnly] float _nextFire = 0f;
 
     public event Action onShoot = null;
 

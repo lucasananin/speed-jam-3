@@ -17,15 +17,20 @@ public class Bullet : MonoBehaviour
         transform.DOKill();
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (_isPlayerBullet && collision.gameObject.CompareTag("Player"))
-    //    {
-    //        return;
-    //    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (_isPlayerBullet && collision.gameObject.CompareTag("Player"))
+        {
+            return;
+        }
 
-    //    Destroy(gameObject);
-    //}
+        if (collision.gameObject.TryGetComponent(out HealthSystem _healthSystem))
+        {
+            _healthSystem.TakeDamage(_damage);
+        }
+
+        Destroy(gameObject);
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

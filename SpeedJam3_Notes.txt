@@ -1,11 +1,13 @@
 // Speed Jam 3 - Anotacoes.
 
 ## Inimigo:
-+ Atirar contra o jogador.
 + Testar boss.
+- Definir mecanicas.
 
 ## Prototipo de level progression.
 + fazer tres fases e passar de uma para a outra.
+- saida da fase.
+- tela de loading.
 
 ## UI.
 + menu principal.

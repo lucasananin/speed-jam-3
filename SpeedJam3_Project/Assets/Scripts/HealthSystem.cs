@@ -6,8 +6,10 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
+    [SerializeField] bool _isInvincible = false;
     [SerializeField] float _maxHealth = 3;
     [SerializeField, ReadOnly] float _currentHealth = 0;
+
 
     public event Action onDamageTaken = null;
     public event Action onDead = null;
@@ -25,6 +27,8 @@ public class HealthSystem : MonoBehaviour
 
     public void TakeDamage(float _value)
     {
+        if (_isInvincible) return;
+
         _currentHealth -= _value;
 
         if (_currentHealth <= 0)
@@ -42,6 +46,12 @@ public class HealthSystem : MonoBehaviour
     private void ResetHealth()
     {
         _currentHealth = _maxHealth;
+    }
+
+    [Button]
+    private void Die()
+    {
+        TakeDamage(_currentHealth);
     }
 
     [Button]
