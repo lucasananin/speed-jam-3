@@ -4,15 +4,7 @@
 + Testar boss.
 - Definir mecanicas.
 
-## Shell hole:
-+ puxa para somente uma direcao usando um vector2.
-
-## Prototipo de level progression.
-+ fazer menu principal e passar de cena.
-+ fazer tres fases e passar de uma para a outra.
-
 ## UI.
-+ menu principal.
 + tempo de jogo.
 
 ## Audios:
@@ -32,3 +24,7 @@ de olhar tag.
 + fase no escuro.
 + jogador é puxado para cima enquanto precisa esquivar 
 de espetos.
+
+## Bugs:
++ o bullet desaparece ao atirar de dentro de um shellHole 
+ou spider web.

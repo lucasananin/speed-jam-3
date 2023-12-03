@@ -5,7 +5,8 @@ using UnityEngine;
 public class ShellHole : MonoBehaviour
 {
     [SerializeField] BoxCollider2D _areaEffectCollider = null;
-    [SerializeField] bool _isPullType = true;
+    [SerializeField] Vector2 _forceDirection = Vector2.up;
+    //[SerializeField] bool _isPullType = true;
     [SerializeField] float _forceMultiplier = 1;
 
     private void Update()
@@ -20,11 +21,12 @@ public class ShellHole : MonoBehaviour
             {
                 var _playerMovement = _colliders[i].GetComponent<PlayerMovement>();
 
-                var _direction = _isPullType ?
-                    (transform.position - _playerMovement.transform.position).normalized :
-                    (_playerMovement.transform.position - transform.position).normalized;
+                //var _direction = _isPullType ?
+                //    (transform.position - _playerMovement.transform.position).normalized :
+                //    (_playerMovement.transform.position - transform.position).normalized;
 
-                _playerMovement.AddForce(_direction, _forceMultiplier);
+                //_playerMovement.AddForce(_direction, _forceMultiplier);
+                _playerMovement.AddForce(_forceDirection, _forceMultiplier);
             }
         }
     }
