@@ -6,6 +6,7 @@
 + procurar...
 
 ## Vfx:
++ muzzle flash nos inimigos.
 + personagem morrer (jogador e npcs).
 
 ## Post Processing:
