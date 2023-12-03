@@ -1,6 +1,6 @@
 // Speed Jam 3 - Anotacoes.
 
-## Timer comecar quando sair iniciar o jogo.
+## Inserir assets.
 
 ## Audios:
 + procurar...
@@ -9,11 +9,3 @@
 + personagem morrer (jogador e npcs).
 
 ## Post Processing:
-
-## Fases:
-+ fase no escuro.
-+ jogador é puxado para cima enquanto precisa esquivar 
-de espetos.
-
-* Objetos que causam dano dão um "tryGet<healthSystem>" ao inves 
-de olhar tag.
