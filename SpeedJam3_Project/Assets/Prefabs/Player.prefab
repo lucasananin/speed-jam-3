@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6510449955172534706}
   - component: {fileID: 6510449955172534705}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpriteRenderer_MuzzleFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6510449955229982264}
   - component: {fileID: 6510449955229982215}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpriteRenderer_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6510449955347144140}
   - component: {fileID: 6510449955347144139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpriteRenderer_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6510449955447795614}
   - component: {fileID: 6510449955447795613}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpriteRenderer_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6510449955627727554}
   - component: {fileID: 6510449955627727553}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpriteRenderer_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 6510449955942891437}
   - component: {fileID: 6510449955942891436}
   - component: {fileID: 6510449955942891435}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpriteRenderer_Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6510449956412999784}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 6510449956482054880}
   - component: {fileID: 6510449956482054895}
   - component: {fileID: 6510449956482054894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -628,7 +628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6510449956525903605}
   - component: {fileID: 6510449956525903604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpriteRenderer_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,7 +712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6510449956667541544}
   - component: {fileID: 6510449956667541559}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Line_LaserSight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -849,7 +849,7 @@ GameObject:
   - component: {fileID: 6510449956788970896}
   - component: {fileID: 6510449956788970897}
   - component: {fileID: 6510449956788970911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -958,6 +958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee6a5d363fa412344921cd5b8e5b8963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isInvincible: 0
   _maxHealth: 3
   _currentHealth: 0
 --- !u!114 &6510449956788970897
@@ -988,7 +989,7 @@ MonoBehaviour:
   _bulletPrefab: {fileID: 8701495659189373570, guid: 16b0baaf9d6e4d140a72ec3d787679ba, type: 3}
   _shootOrigin: {fileID: 6510449956412999784}
   _impulseForceMultiplier: 20
-  _isHoldingShootButton: 0
-  _bulletAngle: 0.3
   _fireRate: 0.1
   _nextFire: 0
+  _isHoldingShootButton: 0
+  _bulletAngle: 0.3

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8701495659189373568}
   - component: {fileID: 8701495659189373571}
   - component: {fileID: 8701495659189373570}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet_Player
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -87,6 +87,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 8701495659189373568}
   _isPlayerBullet: 1
+  _damage: 1
 --- !u!1 &8701495659454182070
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8701495659454182071}
   - component: {fileID: 8701495659454182068}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8701495659714182951}
   - component: {fileID: 8701495659714182948}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

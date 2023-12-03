@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 232799234355466698}
   - component: {fileID: 232799234355466696}
   - component: {fileID: 232799234355466697}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpiderWeb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232799234432804519}
   - component: {fileID: 232799234432804518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Circle_AreaEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232799234723407592}
   - component: {fileID: 232799234723407511}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hexagon Flat-Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
