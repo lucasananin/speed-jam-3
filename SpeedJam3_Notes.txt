@@ -1,8 +1,6 @@
 // Speed Jam 3 - Anotacoes.
 
-## Inimigo:
-+ Testar boss.
-- Definir mecanicas.
+## Timer comecar quando sair iniciar o jogo.
 
 ## Audios:
 + procurar...

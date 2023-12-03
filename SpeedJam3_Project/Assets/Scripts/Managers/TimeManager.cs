@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class TimeManager : Singleton<TimeManager>
 {
-    //[SerializeField] PlayerDataSO _playerDataSo = null;
+    [SerializeField] PlayerDataSO _playerDataSo = null;
     [SerializeField] float _timeInSeconds = 0;
 
     private void Update()
     {
+        if (!_playerDataSo.CanCountTime) return;
+
         _timeInSeconds += Time.deltaTime;
         //Debug.Log(GetTimeString());
     }
