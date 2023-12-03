@@ -8,6 +8,9 @@ public class PlayerWeapon : Weapon
 {
     [SerializeField] bool _isHoldingShootButton = false;
     [SerializeField] float _bulletAngle = 3f;
+    [Space]
+    [SerializeField] Transform _muzzlePoint = null;
+    [SerializeField] ParticleSystem _muzzleFlashVfx = null;
 
     public event Action onShoot = null;
 
@@ -47,6 +50,9 @@ public class PlayerWeapon : Weapon
 
         Vector3 _impulseDirection = (_mousePosition - transform.position).normalized;
         _bullet.AddImpulse(_impulseDirection, _impulseForceMultiplier);
+
+        var _p = Instantiate(_muzzleFlashVfx, _muzzlePoint.position, _muzzlePoint.rotation, _muzzlePoint);
+        _p.Play();
 
         onShoot?.Invoke();
     }

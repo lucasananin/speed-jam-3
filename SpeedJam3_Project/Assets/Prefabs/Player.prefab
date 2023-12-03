@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4606382994142183555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2427238944350529763}
+  m_Layer: 6
+  m_Name: MuzzleFlash_Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2427238944350529763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4606382994142183555}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.4, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6510449956482054880}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &6510449955172534707
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6510449956412999784}
   m_Layer: 6
-  m_Name: ShootPoint
+  m_Name: Shoot_Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -589,6 +620,7 @@ Transform:
   - {fileID: 6510449955172534706}
   - {fileID: 6510449956667541544}
   - {fileID: 6510449956412999784}
+  - {fileID: 2427238944350529763}
   m_Father: {fileID: 6510449956788970902}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -993,3 +1025,5 @@ MonoBehaviour:
   _nextFire: 0
   _isHoldingShootButton: 0
   _bulletAngle: 0.3
+  _muzzlePoint: {fileID: 2427238944350529763}
+  _muzzleFlashVfx: {fileID: 4051781619699737645, guid: 4751797d62474cd4397066599eead437, type: 3}

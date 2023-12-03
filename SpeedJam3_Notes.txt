@@ -20,6 +20,3 @@ de espetos.
 
 * Objetos que causam dano dão um "tryGet<healthSystem>" ao inves 
 de olhar tag.
-* Bugs:
-+ o bullet desaparece ao atirar de dentro de um shellHole 
-ou spider web.
