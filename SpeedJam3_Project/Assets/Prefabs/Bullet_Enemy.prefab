@@ -55,10 +55,6 @@ PrefabInstance:
       propertyPath: _isPlayerBullet
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8701495659189373571, guid: 16b0baaf9d6e4d140a72ec3d787679ba, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8701495659189373581, guid: 16b0baaf9d6e4d140a72ec3d787679ba, type: 3}
       propertyPath: m_Name
       value: Bullet_Enemy

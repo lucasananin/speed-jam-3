@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3223530796464909314}
   - component: {fileID: 3223530796464909315}
   - component: {fileID: 8937154509165541718}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,6 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee6a5d363fa412344921cd5b8e5b8963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isInvincible: 0
   _maxHealth: 3
   _currentHealth: 0
 --- !u!114 &3223530796464909315
@@ -151,7 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3223530796992641446}
   - component: {fileID: 3223530796992641445}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle_AlertArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3223530797022938306}
   - component: {fileID: 3223530797022938305}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6356989556053827837}
   - component: {fileID: 5961805095215535081}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle_AttackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}

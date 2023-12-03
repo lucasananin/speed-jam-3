@@ -8,7 +8,6 @@
 + procurar...
 
 ## Vfx:
-+ player muzzle flash.
 + personagem morrer (jogador e npcs).
 
 ## Post Processing:

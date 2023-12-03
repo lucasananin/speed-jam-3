@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3690363346269616851}
   - component: {fileID: 3690363346269616850}
   - component: {fileID: 3690363346269616857}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3690363346768531987}
   - component: {fileID: 3690363346768531984}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3690363346798784375}
   - component: {fileID: 3690363346798784372}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle_AlertArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6572484139184152090}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ShootOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5166215452747363884}
   - component: {fileID: 5563656254254515512}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle_AttackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 428736514660427781}
   - component: {fileID: 7480031275272096922}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Line_LaserSight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

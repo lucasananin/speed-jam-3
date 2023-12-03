@@ -34,9 +34,25 @@ public class EnemyBulletWeapon : Weapon
 
     public override void Shoot()
     {
-        Bullet _bullet = Instantiate(_bulletPrefab, _shootOrigin.position, Quaternion.identity);
+        if (_shootPoints.Count == 0)
+        {
+            Bullet _bullet = Instantiate(_bulletPrefab, _shootOrigin.position, Quaternion.identity);
 
-        Vector3 _impulseDirection = (_enemy2.PlayerHealth.transform.position - transform.position).normalized;
-        _bullet.AddImpulse(_impulseDirection, _impulseForceMultiplier);
+            Vector3 _impulseDirection = (_enemy2.PlayerHealth.transform.position - transform.position).normalized;
+            _bullet.AddImpulse(_impulseDirection, _impulseForceMultiplier);
+        }
+        else
+        {
+            int _count = _shootPoints.Count;
+
+            for (int i = 0; i < _count; i++)
+            {
+                Bullet _bullet = Instantiate(_bulletPrefab, _shootPoints[i].position, Quaternion.identity);
+
+                //Vector3 _impulseDirection = (_enemy2.PlayerHealth.transform.position - transform.position).normalized;
+                //_bullet.AddImpulse(_impulseDirection, _impulseForceMultiplier);
+                _bullet.AddImpulse(_shootPoints[i].up, _impulseForceMultiplier);
+            }
+        }
     }
 }

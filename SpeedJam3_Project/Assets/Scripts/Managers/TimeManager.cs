@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TimeManager : Singleton<TimeManager>
 {
-    [SerializeField] PlayerDataSO _playerDataSo = null;
+    //[SerializeField] PlayerDataSO _playerDataSo = null;
     [SerializeField] float _timeInSeconds = 0;
 
     private void Update()

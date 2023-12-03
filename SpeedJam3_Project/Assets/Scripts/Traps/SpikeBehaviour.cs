@@ -8,9 +8,14 @@ public class SpikeBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D _other)
     {
-        if (_other.gameObject.CompareTag("Player"))
+        //if (_other.gameObject.CompareTag("Player"))
+        //{
+        //    _other.GetComponent<HealthSystem>().TakeDamage(_damage);
+        //}
+
+        if (_other.gameObject.TryGetComponent(out HealthSystem _healthSystem))
         {
-            _other.GetComponent<HealthSystem>().TakeDamage(_damage);
+            _healthSystem.TakeDamage(_damage);
         }
     }
 }
