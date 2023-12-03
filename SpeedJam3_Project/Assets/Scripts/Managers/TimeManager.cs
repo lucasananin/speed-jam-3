@@ -11,7 +11,7 @@ public class TimeManager : Singleton<TimeManager>
     private void Update()
     {
         _timeInSeconds += Time.deltaTime;
-        Debug.Log(GetTimeString());
+        //Debug.Log(GetTimeString());
     }
 
     public string GetTimeString()

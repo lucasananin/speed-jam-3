@@ -8,20 +8,18 @@
 + procurar...
 
 ## Vfx:
-+ flash vermelho na tela ao tomar dano.
 + player muzzle flash.
 + personagem morrer (jogador e npcs).
 
 ## Post Processing:
-
-* Objetos que causam dano dão um "tryGet<healthSystem>" ao inves 
-de olhar tag.
 
 ## Fases:
 + fase no escuro.
 + jogador é puxado para cima enquanto precisa esquivar 
 de espetos.
 
-## Bugs:
+* Objetos que causam dano dão um "tryGet<healthSystem>" ao inves 
+de olhar tag.
+* Bugs:
 + o bullet desaparece ao atirar de dentro de um shellHole 
 ou spider web.

@@ -7,16 +7,24 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] HealthSystem _healthSystem = null;
 
+    public static event Action onPlayerTakeDamage = null;
     public static event Action onPlayerDead = null;
 
     private void OnEnable()
     {
         _healthSystem.onDead += Die;
+        _healthSystem.onDamageTaken += TakeDamage;
     }
 
     private void OnDisable()
     {
         _healthSystem.onDead -= Die;
+        _healthSystem.onDamageTaken -= TakeDamage;
+    }
+
+    private void TakeDamage()
+    {
+        onPlayerTakeDamage?.Invoke();
     }
 
     private void Die()
