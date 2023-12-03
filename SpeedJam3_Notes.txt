@@ -4,9 +4,6 @@
 + Testar boss.
 - Definir mecanicas.
 
-## UI.
-+ tempo de jogo.
-
 ## Audios:
 + procurar...
 

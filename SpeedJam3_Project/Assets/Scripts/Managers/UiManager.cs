@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UiManager : Singleton<UiManager>
 {
     [SerializeField] GameObject _loadingPanel = null;
+    [SerializeField] TextMeshProUGUI _timeScoreText = null;
 
     private void Awake()
     {
@@ -21,6 +23,11 @@ public class UiManager : Singleton<UiManager>
     {
         LoadSceneManager.onStartLoading -= ShowLoadingPanel;
         LoadSceneManager.onFinishLoading -= HideLoadingPanel;
+    }
+
+    private void Update()
+    {
+        _timeScoreText.text = TimeManager.Instance.GetTimeString();
     }
 
     private void ShowLoadingPanel()
