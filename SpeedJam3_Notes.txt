@@ -4,21 +4,24 @@
 + Testar boss.
 - Definir mecanicas.
 
+## Shell hole:
++ puxa para somente uma direcao usando um vector2.
+
 ## Prototipo de level progression.
++ fazer menu principal e passar de cena.
 + fazer tres fases e passar de uma para a outra.
-- saida da fase.
-- tela de loading.
 
 ## UI.
 + menu principal.
-+ vida do jogador.
 + tempo de jogo.
 
 ## Audios:
 + procurar...
 
 ## Vfx:
-+ ver quais.
++ flash vermelho na tela ao tomar dano.
++ player muzzle flash.
++ personagem morrer (jogador e npcs).
 
 ## Post Processing:
 

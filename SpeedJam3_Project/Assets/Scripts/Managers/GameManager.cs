@@ -24,6 +24,13 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (LoadSceneManager.Instance != null)
+        {
+            LoadSceneManager.Instance.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

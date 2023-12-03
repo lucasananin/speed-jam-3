@@ -10,9 +10,10 @@ public class HealthSystem : MonoBehaviour
     [SerializeField] float _maxHealth = 3;
     [SerializeField, ReadOnly] float _currentHealth = 0;
 
-
     public event Action onDamageTaken = null;
     public event Action onDead = null;
+
+    public float CurrentHealth { get => _currentHealth; private set => _currentHealth = value; }
 
     private void Start()
     {
