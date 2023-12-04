@@ -51,6 +51,7 @@ public class PlayerWeapon : Weapon
 
         PlayMuzzleFlashVfx();
         PlayRecoilVfx();
+        PlaySfx();
         onShoot?.Invoke();
     }
 }

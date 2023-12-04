@@ -55,4 +55,12 @@ public abstract class Weapon : MonoBehaviour
         _weaponTransform.localPosition += Vector3.left * _recoil;
         _weaponTransform.DOLocalMoveX(0, _duration);
     }
+
+    public virtual void PlaySfx()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayShootSfx();
+        }
+    }
 }

@@ -6,9 +6,9 @@ public class AudioManager : Singleton<AudioManager>
 {
     [Space]
     [SerializeField] AudioSource _musicAudio = null;
-    [SerializeField] AudioSource _sfxAudio = null;
+    [SerializeField] AudioSource _shootSfxAudio = null;
     [Space]
-    [SerializeField] AudioClip _sfxClip = null;
+    [SerializeField] AudioClip _shootSfxClip = null;
 
     public void PlayMusic()
     {
@@ -23,18 +23,19 @@ public class AudioManager : Singleton<AudioManager>
         _musicAudio.Stop();
     }
 
+    public void PlayShootSfx()
+    {
+        _shootSfxAudio.pitch = Random.Range(1, 1.2f);
+        _shootSfxAudio.PlayOneShot(_shootSfxClip);
+    }
+
     public void PlaySfx()
     {
-        _sfxAudio.Play();
+        _shootSfxAudio.Play();
     }
 
     public void StopSfx()
     {
-        _sfxAudio.Stop();
-    }
-
-    public void PlayScoreSfx()
-    {
-        _sfxAudio.PlayOneShot(_sfxClip);
+        _shootSfxAudio.Stop();
     }
 }

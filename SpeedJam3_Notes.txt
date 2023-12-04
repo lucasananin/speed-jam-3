@@ -1,15 +1,17 @@
 // Speed Jam 3 - Anotacoes.
 
-## Script para dar play no tempo quando comecar o tutorial.
 ## Texto de tutorial na fase do jogo.
 
 ## Leaderboard:
 
 ## Audios:
-+ procurar...
++ musiquinha.
++ tiro.
++ botao de ui.
++ morte.
++ passando de fase.
 
 ## Montar UI:
-+ procura fonte.
 + creditos no menu principal.
 
 ## Iluminacao:
