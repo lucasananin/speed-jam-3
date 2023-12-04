@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EnemyBulletWeapon : Weapon
 {
+    [Title("// Enemy")]
     [SerializeField] Enemy2 _enemy2 = null;
 
     private void Awake()
@@ -40,7 +41,8 @@ public class EnemyBulletWeapon : Weapon
 
             Vector3 _impulseDirection = (_enemy2.PlayerHealth.transform.position - transform.position).normalized;
             _bullet.AddImpulse(_impulseDirection, _impulseForceMultiplier);
-            SpawnMuzzleFlash();
+            PlayMuzzleFlashVfx();
+            PlayRecoilVfx();
         }
         else
         {
@@ -53,7 +55,8 @@ public class EnemyBulletWeapon : Weapon
                 //Vector3 _impulseDirection = (_enemy2.PlayerHealth.transform.position - transform.position).normalized;
                 //_bullet.AddImpulse(_impulseDirection, _impulseForceMultiplier);
                 _bullet.AddImpulse(_shootPoints[i].up, _impulseForceMultiplier);
-                SpawnMuzzleFlash();
+                PlayMuzzleFlashVfx();
+                PlayRecoilVfx();
             }
         }
     }

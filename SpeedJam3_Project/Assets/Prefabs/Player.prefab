@@ -1116,5 +1116,8 @@ MonoBehaviour:
   _muzzlePoint: {fileID: 2427238944350529763}
   _muzzlePoints: []
   _muzzleFlashVfx: {fileID: 4051781619699737645, guid: 4751797d62474cd4397066599eead437, type: 3}
+  _weaponTransform: {fileID: 6510449956482054880}
+  _recoil: 0.1
+  _duration: 0.3
   _isHoldingShootButton: 0
   _bulletAngle: 0.3

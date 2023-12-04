@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PlayerWeapon : Weapon
 {
+    [Title("// Player Weapon")]
     [SerializeField] bool _isHoldingShootButton = false;
     [SerializeField] float _bulletAngle = 3f;
 
@@ -48,8 +49,8 @@ public class PlayerWeapon : Weapon
         Vector3 _impulseDirection = (_mousePosition - transform.position).normalized;
         _bullet.AddImpulse(_impulseDirection, _impulseForceMultiplier);
 
-        SpawnMuzzleFlash();
-
+        PlayMuzzleFlashVfx();
+        PlayRecoilVfx();
         onShoot?.Invoke();
     }
 }
