@@ -22,6 +22,12 @@ public class Switch : MonoBehaviour
 
         _isActivated = true;
         _spriteRenderer.sprite = _activatedSprite;
+
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySwitchSfx();
+        }
+
         _onEnabled?.Invoke();
     }
 }

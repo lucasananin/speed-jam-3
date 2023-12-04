@@ -11,6 +11,11 @@ public class LevelExit : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayLevelFinishSfx();
+            }
+
             _unityEvent?.Invoke();
             Debug.Log("foi");
         }

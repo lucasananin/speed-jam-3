@@ -29,6 +29,11 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayDefeatSfx();
+        }
+
         //Application.LoadLevel(Application.loadedLevel);
         gameObject.SetActive(false);
         onPlayerDead?.Invoke();
