@@ -132,8 +132,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _areaEffectSprite: {fileID: 4835944191558533305}
   _isPullType: 1
-  _radius: 2
-  _forceMultiplier: 1
+  _radius: 8
+  _forceMultiplier: 10
 --- !u!1 &4835944191558533311
 GameObject:
   m_ObjectHideFlags: 0

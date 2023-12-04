@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 136200570464502666}
-  _activatedSprite: {fileID: 21300000, guid: cd901036956624f49a0348a31e643462, type: 3}
+  _activatedSprite: {fileID: 21300000, guid: 7e0ae82233b404a46b32b91a616f6549, type: 3}
   _onlyEnabledByPlayer: 0
   _isActivated: 0
   _onEnabled:
