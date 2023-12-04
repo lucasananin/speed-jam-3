@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     [SerializeField] Rigidbody2D _rb = null;
     [SerializeField] bool _isPlayerBullet = true;
     [SerializeField] float _damage = 1;
+    [Space]
+    [SerializeField] ParticleSystem _hitVfx = null;
     //[Space]
     //[SerializeField] float _finalScale = 1f;
     //[SerializeField] float _scaleDuration = 1f;
@@ -29,6 +31,12 @@ public class Bullet : MonoBehaviour
             _healthSystem.TakeDamage(_damage);
         }
 
+        if (_hitVfx != null)
+        {
+            var _p = Instantiate(_hitVfx, transform.position, transform.rotation);
+            _p.Play();
+        }
+
         Destroy(gameObject);
     }
 
@@ -42,6 +50,12 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.TryGetComponent(out HealthSystem _healthSystem))
         {
             _healthSystem.TakeDamage(_damage);
+        }
+
+        if (_hitVfx != null)
+        {
+            var _p = Instantiate(_hitVfx, transform.position, transform.rotation);
+            _p.Play();
         }
 
         Destroy(gameObject);

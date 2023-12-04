@@ -52,6 +52,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8701495659189373570, guid: 16b0baaf9d6e4d140a72ec3d787679ba, type: 3}
+      propertyPath: _hitVfx
+      value: 
+      objectReference: {fileID: 5924998518746552311, guid: b4363fe0c6783d94c915bdad5d67c00a, type: 3}
+    - target: {fileID: 8701495659189373570, guid: 16b0baaf9d6e4d140a72ec3d787679ba, type: 3}
       propertyPath: _isPlayerBullet
       value: 0
       objectReference: {fileID: 0}

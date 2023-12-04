@@ -88,6 +88,7 @@ MonoBehaviour:
   _rb: {fileID: 8701495659189373568}
   _isPlayerBullet: 1
   _damage: 1
+  _hitVfx: {fileID: 5914604027299340642, guid: 34d6e95e0f1276a40bceb2c606022f2e, type: 3}
 --- !u!1 &8701495659454182070
 GameObject:
   m_ObjectHideFlags: 0
