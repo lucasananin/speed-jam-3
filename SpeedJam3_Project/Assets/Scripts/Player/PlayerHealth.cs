@@ -42,7 +42,7 @@ public class PlayerHealth : MonoBehaviour
             AudioManager.Instance.PlayDefeatSfx();
         }
 
-        //Application.LoadLevel(Application.loadedLevel);
+        Application.LoadLevel(Application.loadedLevel);
         gameObject.SetActive(false);
         onPlayerDead?.Invoke();
     }
