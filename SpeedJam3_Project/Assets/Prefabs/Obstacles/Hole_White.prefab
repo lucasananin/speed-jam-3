@@ -60,8 +60,16 @@ PrefabInstance:
       value: Hole_White
       objectReference: {fileID: 0}
     - target: {fileID: 4835944191061182999, guid: 5c07bd4e0c730c04fb1e287b1c337b9e, type: 3}
+      propertyPath: _radius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835944191061182999, guid: 5c07bd4e0c730c04fb1e287b1c337b9e, type: 3}
       propertyPath: _isPullType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835944191061182999, guid: 5c07bd4e0c730c04fb1e287b1c337b9e, type: 3}
+      propertyPath: _forceMultiplier
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4835944191558533305, guid: 5c07bd4e0c730c04fb1e287b1c337b9e, type: 3}
       propertyPath: m_Sprite
