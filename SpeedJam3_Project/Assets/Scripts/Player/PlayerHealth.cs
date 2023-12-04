@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        Application.LoadLevel(Application.loadedLevel);
+        //Application.LoadLevel(Application.loadedLevel);
         gameObject.SetActive(false);
         onPlayerDead?.Invoke();
     }

@@ -1,7 +1,6 @@
 // Speed Jam 3 - Anotacoes.
 
 ## Inserir assets.
-+ mudar sprite do botao ativa/desativa.
 + animacao do boss tomando dano.
 
 ## Leaderboard:

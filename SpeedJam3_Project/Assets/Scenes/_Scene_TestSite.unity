@@ -5419,7 +5419,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1643785138
 Transform:
   m_ObjectHideFlags: 0
@@ -6886,6 +6886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser
       objectReference: {fileID: 0}
+    - target: {fileID: 2631033128607076187, guid: 184a05a98fdba0546b71507efdf1f7b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 184a05a98fdba0546b71507efdf1f7b0, type: 3}
 --- !u!1001 &3223530797151358071
@@ -6970,7 +6974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3701833006254905059, guid: 9b4dcc39b4c70ca48a907dd577b9eab3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.2
+      value: -4.63
       objectReference: {fileID: 0}
     - target: {fileID: 3701833006254905059, guid: 9b4dcc39b4c70ca48a907dd577b9eab3, type: 3}
       propertyPath: m_LocalPosition.z
