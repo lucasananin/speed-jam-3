@@ -40,6 +40,7 @@ public class EnemyBulletWeapon : Weapon
 
             Vector3 _impulseDirection = (_enemy2.PlayerHealth.transform.position - transform.position).normalized;
             _bullet.AddImpulse(_impulseDirection, _impulseForceMultiplier);
+            SpawnMuzzleFlash();
         }
         else
         {
@@ -52,6 +53,7 @@ public class EnemyBulletWeapon : Weapon
                 //Vector3 _impulseDirection = (_enemy2.PlayerHealth.transform.position - transform.position).normalized;
                 //_bullet.AddImpulse(_impulseDirection, _impulseForceMultiplier);
                 _bullet.AddImpulse(_shootPoints[i].up, _impulseForceMultiplier);
+                SpawnMuzzleFlash();
             }
         }
     }

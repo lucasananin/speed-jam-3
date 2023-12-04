@@ -251,6 +251,14 @@ MonoBehaviour:
   _impulseForceMultiplier: 10
   _fireRate: 3
   _nextFire: 0
+  _muzzlePoint: {fileID: 4051781619699737644, guid: 3ae539e3652fd8f439a4a3d0ca0d5135, type: 3}
+  _muzzlePoints:
+  - {fileID: 2416326911239199117}
+  - {fileID: 2416326912298132871}
+  - {fileID: 2416326912029012109}
+  - {fileID: 2416326911541335297}
+  - {fileID: 1537972910045790679}
+  _muzzleFlashVfx: {fileID: 4051781619699737645, guid: 3ae539e3652fd8f439a4a3d0ca0d5135, type: 3}
   _enemy2: {fileID: 2416326911325176219}
 --- !u!1 &2416326911381483379
 GameObject:

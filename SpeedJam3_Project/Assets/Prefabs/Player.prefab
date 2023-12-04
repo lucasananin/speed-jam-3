@@ -192,7 +192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4606382994142183555}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.6, y: 0.08, z: 0}
+  m_LocalPosition: {x: 0.55, y: 0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -659,7 +659,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6510449956412999785}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: 0.07, z: 0}
+  m_LocalPosition: {x: 0.6, y: 0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1109,7 +1109,7 @@ MonoBehaviour:
   _impulseForceMultiplier: 20
   _fireRate: 0.1
   _nextFire: 0
-  _isHoldingShootButton: 0
-  _bulletAngle: 0.3
   _muzzlePoint: {fileID: 2427238944350529763}
   _muzzleFlashVfx: {fileID: 4051781619699737645, guid: 4751797d62474cd4397066599eead437, type: 3}
+  _isHoldingShootButton: 0
+  _bulletAngle: 0.3
