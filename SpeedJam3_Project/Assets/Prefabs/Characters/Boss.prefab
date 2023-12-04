@@ -234,6 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthSystem: {fileID: 2416326911325176218}
   _isShield: 0
+  _isBoss: 1
 --- !u!114 &2416326911325176212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,6 +415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthSystem: {fileID: 2416326911381483383}
   _isShield: 1
+  _isBoss: 0
 --- !u!1 &2416326911541335296
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthSystem: {fileID: 2416326911584356015}
   _isShield: 1
+  _isBoss: 0
 --- !u!1 &2416326911593954934
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,6 +760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthSystem: {fileID: 2416326911593954938}
   _isShield: 1
+  _isBoss: 0
 --- !u!1 &2416326911740185449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,6 +1023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthSystem: {fileID: 2416326911995605081}
   _isShield: 1
+  _isBoss: 0
 --- !u!1 &2416326912029012108
 GameObject:
   m_ObjectHideFlags: 0
