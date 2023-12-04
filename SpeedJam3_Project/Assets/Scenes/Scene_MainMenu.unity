@@ -552,7 +552,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.21176472, b: 0.31764707, a: 1}
+  m_Color: {r: 0.1764706, g: 0.07058824, b: 0.17254902, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2754,6 +2754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isPersistent: 0
+  _playerDataSO: {fileID: 11400000, guid: b51eadfc631a6374788288a1e31f15ef, type: 2}
   _loadingPanel: {fileID: 1709684544}
   _timeScoreText: {fileID: 1184920997}
 --- !u!114 &1249594530
