@@ -846,6 +846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isPersistent: 0
+  _playerDataSO: {fileID: 11400000, guid: b51eadfc631a6374788288a1e31f15ef, type: 2}
   _isLoading: 0
 --- !u!4 &499965540
 Transform:

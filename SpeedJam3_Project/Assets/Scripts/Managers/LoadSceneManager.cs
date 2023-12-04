@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneManager : Singleton<LoadSceneManager>
 {
+    [SerializeField] PlayerDataSO _playerDataSO = null;
     [SerializeField, ReadOnly] bool _isLoading = false;
 
     public static event Action onStartLoading = null;
@@ -29,6 +30,7 @@ public class LoadSceneManager : Singleton<LoadSceneManager>
     {
         var _player = FindObjectOfType<PlayerHealth>();
         _player?.BecomeInvincible();
+        _playerDataSO.CanCountTime = false;
 
         yield return new WaitForSeconds(3);
         LoadScene("Scene_Leaderboard");
