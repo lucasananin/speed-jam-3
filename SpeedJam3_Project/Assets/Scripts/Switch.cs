@@ -21,7 +21,6 @@ public class Switch : MonoBehaviour
         }
 
         _isActivated = true;
-        //_spriteRenderer.color = Color.green;
         _spriteRenderer.sprite = _activatedSprite;
         _onEnabled?.Invoke();
     }

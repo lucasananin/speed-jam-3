@@ -1,7 +1,7 @@
 // Speed Jam 3 - Anotacoes.
 
-## Inserir assets.
-+ animacao do boss tomando dano.
+## Script para dar play no tempo quando comecar o tutorial.
+## Texto de tutorial na fase do jogo.
 
 ## Leaderboard:
 

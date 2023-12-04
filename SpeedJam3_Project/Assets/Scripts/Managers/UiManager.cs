@@ -11,6 +11,7 @@ public class UiManager : Singleton<UiManager>
     private void Awake()
     {
         HideLoadingPanel();
+        HideTimePanel();
     }
 
     private void OnEnable()
@@ -38,5 +39,15 @@ public class UiManager : Singleton<UiManager>
     private void HideLoadingPanel()
     {
         _loadingPanel.gameObject.SetActive(false);
+    }
+
+    public void ShowTimePanel()
+    {
+        _timeScoreText.enabled = true;
+    }
+
+    public void HideTimePanel()
+    {
+        _timeScoreText.enabled = false;
     }
 }

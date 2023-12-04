@@ -8,38 +8,42 @@ using LootLocker.Requests;
 public class LoginUiPanel : MonoBehaviour
 {
     [SerializeField] PlayerDataSO _playerDataSO = null;
+    [SerializeField] LoadSceneComponent _loadSceneComponent = null;
     [SerializeField] GameObject _loginPanel = null;
     [SerializeField] GameObject _loadingPanel = null;
     [SerializeField] TMP_InputField _inputField = null;
     [SerializeField] Button _confirmButton = null;
     [SerializeField] TextMeshProUGUI _errorMessageText = null;
 
-    //private IEnumerator Start()
-    //{
-    //    while (!LootLockerSDKManager.CheckInitialized())
-    //    {
-    //        yield return null;
-    //    }
+    private IEnumerator Start()
+    {
+        yield return null;
+        //while (!LootLockerSDKManager.CheckInitialized())
+        //{
+        //    yield return null;
+        //}
 
-    //    if (!_playerDataSO.HasSetName())
-    //    {
-    //        Show();
-    //    }
-    //    else
-    //    {
-    //        HideAll();
-    //    }
+        //if (!_playerDataSO.HasSetName())
+        //{
+        //    Show();
+        //}
+        //else
+        //{
+        //    HideAll();
+        //}
+
+        HideAll();
+    }
+
+    //private void OnEnable()
+    //{
+    //    _confirmButton.onClick.AddListener(SetPlayerName);
     //}
 
-    private void OnEnable()
-    {
-        _confirmButton.onClick.AddListener(SetPlayerName);
-    }
-
-    private void OnDisable()
-    {
-        _confirmButton.onClick.RemoveAllListeners();
-    }
+    //private void OnDisable()
+    //{
+    //    _confirmButton.onClick.RemoveAllListeners();
+    //}
 
     private void Update()
     {
@@ -56,9 +60,10 @@ public class LoginUiPanel : MonoBehaviour
         {
             if (response.success)
             {
-                _playerDataSO.HasSetName();
+                _playerDataSO.SetPlayerName();
                 _playerDataSO.SetPlayerId(_playerDataSO.UserName);
                 HideAll();
+                _loadSceneComponent.LoadScene();
             }
             else
             {
