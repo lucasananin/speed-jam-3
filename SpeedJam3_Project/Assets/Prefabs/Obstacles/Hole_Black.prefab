@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4835944190508654142
 Transform:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dd89c88179666f4478268b5c54789dda, type: 3}
   m_Color: {r: 0.18666656, g: 0.08, b: 0.4, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4835944191061182996}
   - component: {fileID: 4835944191061182999}
   m_Layer: 0
-  m_Name: BlackHole
+  m_Name: Hole_Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,6 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4835944191558533310}
   - component: {fileID: 4835944191558533305}
+  - component: {fileID: 3976105615761151315}
   m_Layer: 0
   m_Name: Circle_AreaEffect
   m_TagString: Untagged
@@ -207,8 +208,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.18666671, g: 0.08, b: 0.4, a: 0.4}
+  m_Sprite: {fileID: 21300000, guid: dd89c88179666f4478268b5c54789dda, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -218,3 +219,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3976105615761151315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4835944191558533311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563c87be513ef0140ac8b2f268669ac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: -15

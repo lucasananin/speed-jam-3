@@ -1,9 +1,14 @@
 // Speed Jam 3 - Anotacoes.
 
 ## Inserir assets.
++ 
 
 ## Audios:
 + procurar...
+
+## Montar UI:
++ procura fonte.
++ credits no main menu.
 
 ## Vfx:
 + coice da arma.
