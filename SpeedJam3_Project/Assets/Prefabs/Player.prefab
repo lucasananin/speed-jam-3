@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -800712437
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9e70b77fd09c4324d9c0673a5afa08c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1078,6 +1078,10 @@ MonoBehaviour:
   _isInvincible: 0
   _maxHealth: 3
   _currentHealth: 0
+  _spriteRenderers:
+  - {fileID: 6510449955942891436}
+  - {fileID: 5610408066298381010}
+  _duration: 0.3
 --- !u!114 &6510449956788970897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,6 +1114,7 @@ MonoBehaviour:
   _fireRate: 0.1
   _nextFire: 0
   _muzzlePoint: {fileID: 2427238944350529763}
+  _muzzlePoints: []
   _muzzleFlashVfx: {fileID: 4051781619699737645, guid: 4751797d62474cd4397066599eead437, type: 3}
   _isHoldingShootButton: 0
   _bulletAngle: 0.3

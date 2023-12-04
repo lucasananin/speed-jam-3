@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -800712437
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ad696693297279c4d96709b975f692bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -197,6 +197,10 @@ MonoBehaviour:
   _isInvincible: 0
   _maxHealth: 3
   _currentHealth: 0
+  _spriteRenderers:
+  - {fileID: 3690363346768531984}
+  - {fileID: 2140737345161877715}
+  _duration: 0.3
 --- !u!114 &3690363346269616850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +233,7 @@ MonoBehaviour:
   _fireRate: 1
   _nextFire: 0
   _muzzlePoint: {fileID: 6390759745978364235}
+  _muzzlePoints: []
   _muzzleFlashVfx: {fileID: 4051781619699737645, guid: 3ae539e3652fd8f439a4a3d0ca0d5135, type: 3}
   _enemy2: {fileID: 3690363346269616856}
 --- !u!1 &3690363346768531986

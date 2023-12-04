@@ -7,7 +7,6 @@
 
 ## Vfx:
 + coice da arma.
-+ Inimigos tomando dano.
 + personagem morrer (jogador e npcs).
 
 ## Post Processing:
