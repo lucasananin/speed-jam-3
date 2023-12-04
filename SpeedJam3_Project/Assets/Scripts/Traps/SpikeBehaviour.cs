@@ -18,4 +18,12 @@ public class SpikeBehaviour : MonoBehaviour
             _healthSystem.TakeDamage(_damage);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out HealthSystem _healthSystem))
+        {
+            _healthSystem.TakeDamage(_damage);
+        }
+    }
 }
