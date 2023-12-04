@@ -12,6 +12,7 @@ public class LevelExit : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             _unityEvent?.Invoke();
+            Debug.Log("foi");
         }
     }
 }
