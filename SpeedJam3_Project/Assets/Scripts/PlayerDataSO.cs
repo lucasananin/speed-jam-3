@@ -7,6 +7,7 @@ public class PlayerDataSO : ScriptableObject
 {
     [SerializeField] string _userName = null;
     [SerializeField] string _loginErrorMessage = null;
+    [SerializeField] string _leaderboardId = "18975";
     [SerializeField] int _score = 0;
     [SerializeField] bool _canCountTime = false;
 
@@ -17,6 +18,7 @@ public class PlayerDataSO : ScriptableObject
     public string LoginErrorMessage { get => _loginErrorMessage; set => _loginErrorMessage = value; }
     public int Score { get => _score; set => _score = value; }
     public bool CanCountTime { get => _canCountTime; set => _canCountTime = value; }
+    public string LeaderboardId { get => _leaderboardId; private set => _leaderboardId = value; }
 
     private void OnEnable()
     {

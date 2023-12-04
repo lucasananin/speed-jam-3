@@ -14,7 +14,8 @@ public class LeaderboardUiSlot : MonoBehaviour
     {
         _rankText.text = $"#{_value.rank}";
         _usernameText.text = $"{_value.player.name}";
-        _scoreText.text = $"{_value.score}";
+        _scoreText.text = $"{TimeManager.Instance.GetTimeString(_value.score)}";
+        //_scoreText.text = $"{_value.score}";
 
         _rankText.color = _isMe ? Color.yellow : Color.white;
         _usernameText.color = _isMe ? Color.yellow : Color.white;

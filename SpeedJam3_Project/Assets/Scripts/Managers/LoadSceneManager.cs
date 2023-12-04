@@ -19,6 +19,21 @@ public class LoadSceneManager : Singleton<LoadSceneManager>
         StartCoroutine(LoadScene_routine(_sceneName));
     }
 
+    [Button]
+    public void LoadEndgameScene()
+    {
+        StartCoroutine(Endgame_routine());
+    }
+
+    private IEnumerator Endgame_routine()
+    {
+        var _player = FindObjectOfType<PlayerHealth>();
+        _player?.BecomeInvincible();
+
+        yield return new WaitForSeconds(3);
+        LoadScene("Scene_Leaderboard");
+    }
+
     private IEnumerator LoadScene_routine(string _sceneName)
     {
         _isLoading = true;

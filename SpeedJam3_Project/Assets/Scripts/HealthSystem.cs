@@ -20,6 +20,7 @@ public class HealthSystem : MonoBehaviour
     public event Action onDead = null;
 
     public float CurrentHealth { get => _currentHealth; private set => _currentHealth = value; }
+    public bool IsInvincible { get => _isInvincible; set => _isInvincible = value; }
 
     private void Start()
     {

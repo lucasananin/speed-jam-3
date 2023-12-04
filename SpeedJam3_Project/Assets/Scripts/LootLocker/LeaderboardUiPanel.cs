@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class LeaderboardUiPanel : MonoBehaviour
 {
     [SerializeField] PlayerDataSO _playerDataSO = null;
-    [SerializeField] string _leaderboardId = "18975";
     [Space]
     [SerializeField] GameObject _leaderboardPanel = null;
     [SerializeField] LeaderboardUiSlot _slotPrefab = null;
@@ -16,6 +15,11 @@ public class LeaderboardUiPanel : MonoBehaviour
     //[SerializeField] Button _continueButton = null;
     [SerializeField] TextMeshProUGUI _loadingText = null;
     [SerializeField] List<LeaderboardUiSlot> _slots = null;
+
+    private void Start()
+    {
+        Show();
+    }
 
     [ContextMenu("Show()")]
     public void Show()
@@ -33,9 +37,6 @@ public class LeaderboardUiPanel : MonoBehaviour
         _loadingText.enabled = true;
         _loadingText.text = "Loading...";
 
-        // Definir o score em outro lugar.
-        _playerDataSO.Score = Random.Range(123, 456);
-
         SubmitScore();
     }
 
@@ -46,7 +47,7 @@ public class LeaderboardUiPanel : MonoBehaviour
 
     public void SubmitScore()
     {
-        LootLockerSDKManager.SubmitScore(_playerDataSO.UserName, _playerDataSO.Score, _leaderboardId, (response) =>
+        LootLockerSDKManager.SubmitScore(_playerDataSO.UserName, _playerDataSO.Score, _playerDataSO.LeaderboardId, (response) =>
         {
             if (response.statusCode == 200)
             {
@@ -66,7 +67,7 @@ public class LeaderboardUiPanel : MonoBehaviour
     {
         int count = 50;
 
-        LootLockerSDKManager.GetScoreList(_leaderboardId, count, 0, (response) =>
+        LootLockerSDKManager.GetScoreList(_playerDataSO.LeaderboardId, count, 0, (response) =>
         {
             if (response.statusCode == 200)
             {

@@ -13,13 +13,19 @@ public class TimeManager : Singleton<TimeManager>
         if (!_playerDataSo.CanCountTime) return;
 
         _timeInSeconds += Time.deltaTime;
+        _playerDataSo.Score = (int)_timeInSeconds;
         //Debug.Log(GetTimeString());
     }
 
     public string GetTimeString()
     {
-        int seconds = ((int)_timeInSeconds % 60);
-        int minutes = ((int)_timeInSeconds / 60);
+        return GetTimeString(_timeInSeconds);
+    }
+
+    public string GetTimeString(float _value)
+    {
+        int seconds = ((int)_value % 60);
+        int minutes = ((int)_value / 60);
         return string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }

@@ -38,4 +38,9 @@ public class PlayerHealth : MonoBehaviour
         gameObject.SetActive(false);
         onPlayerDead?.Invoke();
     }
+
+    public void BecomeInvincible()
+    {
+        _healthSystem.IsInvincible = true;
+    }
 }

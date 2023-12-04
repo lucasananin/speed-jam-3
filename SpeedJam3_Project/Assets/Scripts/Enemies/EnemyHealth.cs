@@ -27,7 +27,9 @@ public class EnemyHealth : MonoBehaviour
 
         if (_isBoss && LoadSceneManager.Instance != null)
         {
-            LoadSceneManager.Instance.LoadScene("Leaderboard");
+            LoadSceneManager.Instance.LoadEndgameScene();
+            //FindObjectOfType<PlayerHealth>().BecomeInvincible();
+            //LoadSceneManager.Instance.LoadScene("Scene_Leaderboard");
         }
 
         gameObject.SetActive(false);
