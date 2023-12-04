@@ -1,14 +1,13 @@
 // Speed Jam 3 - Anotacoes.
 
+## Vfx:
++ personagem morrer (jogador e npcs).
+
+## Post Processing:
+
 ## Audios:
 + procurar...
 
 ## Montar UI:
 + procura fonte.
 + creditos no menu principal.
-
-## Vfx:
-+ coice da arma.
-+ personagem morrer (jogador e npcs).
-
-## Post Processing:

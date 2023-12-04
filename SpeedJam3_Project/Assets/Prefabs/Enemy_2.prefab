@@ -196,6 +196,7 @@ MonoBehaviour:
   - {fileID: 3690363346768531984}
   - {fileID: 2140737345161877715}
   _duration: 0.3
+  _deadVfx: {fileID: 11239338160823049, guid: 79048b48f5dc8a5448ae61ac6665df7d, type: 3}
 --- !u!114 &3690363346269616850
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -115,6 +115,7 @@ MonoBehaviour:
   _spriteRenderers:
   - {fileID: 3223530797022938305}
   _duration: 0.3
+  _deadVfx: {fileID: 11239338160823049, guid: 79048b48f5dc8a5448ae61ac6665df7d, type: 3}
 --- !u!114 &3223530796464909315
 MonoBehaviour:
   m_ObjectHideFlags: 0

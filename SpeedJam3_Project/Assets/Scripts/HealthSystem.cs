@@ -14,6 +14,7 @@ public class HealthSystem : MonoBehaviour
     [Title("// Vfx")]
     [SerializeField] List<SpriteRenderer> _spriteRenderers = null;
     [SerializeField] float _duration = 0.1f;
+    [SerializeField] ParticleSystem _deadVfx = null;
 
     public event Action onDamageTaken = null;
     public event Action onDead = null;
@@ -40,6 +41,7 @@ public class HealthSystem : MonoBehaviour
         if (_currentHealth <= 0)
         {
             _currentHealth = 0;
+            PlayDeadVfx();
             onDead?.Invoke();
         }
         else
@@ -61,6 +63,12 @@ public class HealthSystem : MonoBehaviour
             _spriteRenderers[i].color = Color.red;
             _spriteRenderers[i].DOColor(Color.white, _duration);
         }
+    }
+
+    private void PlayDeadVfx()
+    {
+        var _p = Instantiate(_deadVfx, transform.position, transform.rotation);
+        _p.Play();
     }
 
     [Button]
