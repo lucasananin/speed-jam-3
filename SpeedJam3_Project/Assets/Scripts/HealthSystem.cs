@@ -81,7 +81,7 @@ public class HealthSystem : MonoBehaviour
     }
 
     [Button]
-    private void Die()
+    public void Die()
     {
         TakeDamage(_currentHealth);
     }

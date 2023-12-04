@@ -22,6 +22,14 @@ public class PlayerHealth : MonoBehaviour
         _healthSystem.onDamageTaken -= TakeDamage;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            _healthSystem.Die();
+        }
+    }
+
     private void TakeDamage()
     {
         onPlayerTakeDamage?.Invoke();
