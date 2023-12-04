@@ -1076,7 +1076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 123006314715804786, guid: edc03a21ee8f91c4ea9ea7344f568f83, type: 3}
       propertyPath: _sceneName
-      value: Fase4
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 123006314715804791, guid: edc03a21ee8f91c4ea9ea7344f568f83, type: 3}
       propertyPath: m_Name
