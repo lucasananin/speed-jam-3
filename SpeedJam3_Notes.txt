@@ -1,11 +1,8 @@
 // Speed Jam 3 - Anotacoes.
 
-## Montar UI:
-+ creditos no menu principal.
+## Texto de tutorial na fase do jogo.
+## Buildar.
 
+## Descricao da pagina.
 ## Tirar screenshots.
 ## Gravar um video.
-
-## Texto de tutorial na fase do jogo.
-## Iluminacao:
-* Ativar o postProcessing em todas as cameras do jogo.
