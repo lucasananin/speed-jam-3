@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 1
   _attackRadius: 1.6
-  _attackRate: 1
+  _attackRate: 0.1
   _nextAttack: 0
   _attackAreaSprite: {fileID: 5961805095215535081}
 --- !u!1 &3223530796992641447
