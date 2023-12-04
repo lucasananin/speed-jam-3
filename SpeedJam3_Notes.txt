@@ -1,20 +1,10 @@
 // Speed Jam 3 - Anotacoes.
 
-## Texto de tutorial na fase do jogo.
-
 ## Leaderboard:
-
-## Audios:
-+ musiquinha.
-+ tiro.
-+ botao de ui.
-+ morte.
-+ passando de fase.
 
 ## Montar UI:
 + creditos no menu principal.
 
+## Texto de tutorial na fase do jogo.
 ## Iluminacao:
-
-
 * Ativar o postProcessing em todas as cameras do jogo.

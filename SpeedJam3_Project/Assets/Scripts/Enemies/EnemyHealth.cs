@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] HealthSystem _healthSystem = null;
     [SerializeField] bool _isShield = false;
+    [SerializeField] bool _isBoss = false;
 
     private void OnEnable()
     {
@@ -22,6 +23,11 @@ public class EnemyHealth : MonoBehaviour
         if (_isShield && AudioManager.Instance != null)
         {
             AudioManager.Instance.PlayCrackedShieldSfx();
+        }
+
+        if (_isBoss && LoadSceneManager.Instance != null)
+        {
+            LoadSceneManager.Instance.LoadScene("Leaderboard");
         }
 
         gameObject.SetActive(false);

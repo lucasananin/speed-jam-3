@@ -67,6 +67,8 @@ public class HealthSystem : MonoBehaviour
 
     private void PlayDeadVfx()
     {
+        if (_deadVfx == null) return;
+
         var _p = Instantiate(_deadVfx, transform.position, transform.rotation);
         _p.Play();
     }
