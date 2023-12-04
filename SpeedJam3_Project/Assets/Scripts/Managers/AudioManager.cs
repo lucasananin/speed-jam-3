@@ -6,7 +6,7 @@ using UnityEngine;
 public class AudioManager : Singleton<AudioManager>
 {
     [Space]
-    //[SerializeField] AudioSource _musicAudio = null;
+    [SerializeField] AudioSource _musicAudio = null;
     [SerializeField] AudioSource _shootSfxAudio = null;
     [SerializeField] AudioSource _buttonSfxAudio = null;
     [SerializeField] AudioSource _switchSfxAudio = null;
@@ -21,18 +21,18 @@ public class AudioManager : Singleton<AudioManager>
     [SerializeField] AudioClip _crackedShieldSfxClip = null;
     [SerializeField] AudioClip _levelFinishSfxClip = null;
 
-    //public void PlayMusic()
-    //{
-    //    if (!_musicAudio.isPlaying)
-    //    {
-    //        _musicAudio.Play();
-    //    }
-    //}
+    public void PlayMusic()
+    {
+        if (!_musicAudio.isPlaying)
+        {
+            _musicAudio.Play();
+        }
+    }
 
-    //public void StopMusic()
-    //{
-    //    _musicAudio.Stop();
-    //}
+    public void StopMusic()
+    {
+        _musicAudio.Stop();
+    }
 
     [Button]
     public void PlayShootSfx()

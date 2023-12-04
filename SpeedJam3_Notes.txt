@@ -1,9 +1,10 @@
 // Speed Jam 3 - Anotacoes.
 
-## Leaderboard:
-
 ## Montar UI:
 + creditos no menu principal.
+
+## Tirar screenshots.
+## Gravar um video.
 
 ## Texto de tutorial na fase do jogo.
 ## Iluminacao:
