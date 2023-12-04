@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class UiManager : Singleton<UiManager>
 {
+    [SerializeField] PlayerDataSO _playerDataSO = null;
     [SerializeField] GameObject _loadingPanel = null;
     [SerializeField] TextMeshProUGUI _timeScoreText = null;
 
@@ -28,6 +29,7 @@ public class UiManager : Singleton<UiManager>
 
     private void Update()
     {
+        _timeScoreText.enabled = _playerDataSO.CanCountTime;
         _timeScoreText.text = TimeManager.Instance.GetTimeString();
     }
 

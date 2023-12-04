@@ -1,5 +1,6 @@
 // Speed Jam 3 - Anotacoes.
 
+## botar o canvas nas fases.
 ## Texto de tutorial na fase do jogo.
 ## Buildar.
 
