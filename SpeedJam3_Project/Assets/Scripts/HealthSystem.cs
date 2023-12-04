@@ -43,6 +43,7 @@ public class HealthSystem : MonoBehaviour
             _currentHealth = 0;
             PlayDeadVfx();
             onDead?.Invoke();
+            Application.LoadLevel(Application.loadedLevel);
         }
         else
         {
